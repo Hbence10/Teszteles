@@ -11,7 +11,5 @@ public class ProductsTest extends BaseTest {
     public void testProductsHeaderIsDisplayed(){
         ProductsPage productsPage = loginPage.logIntoApplication("standard_user", "secret_sauce");
         Assert.assertTrue(productsPage.isProductsHeaderDisplayed());
-
-
     }
 }
