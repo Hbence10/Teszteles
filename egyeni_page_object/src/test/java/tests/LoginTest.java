@@ -1,6 +1,7 @@
 package tests;
 
 import base.BaseTest;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,11 +20,13 @@ public class LoginTest extends BaseTest {
 
         }
 
-        System.out.println(actualMessage);
-        String expected = "";
 
-        goLogOut();
+
+        String expected = "Make Appointment";
+        System.out.println(actualMessage    );
+
         Assert.assertEquals(actualMessage, expected);;
+        goLogOut();
     }
 
     @Test
